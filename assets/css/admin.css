@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --main-color: #31C6D4
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+aside {
+    top: 0;
+    background-color: #464343 !important;
+    height: 100vh;
+    position: fixed;
+    width: 27vh;
+}
+
+aside h2 a {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 11px;
+    color: var(--main-color);
+    position: relative;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+
+}
+
+aside h2 a::after {
+    content: "";
+    position: absolute;
+    background-color: #31C6D4;
+    width: 15px;
+    height: 15px;
+    border: 10px solid #fff;
+    border-radius: 50%;
+    top: 39px;
+}
+
+aside h2 a::before {
+    content: "";
+    position: absolute;
+    background-color: var(--main-color);
+    width: 80%;
+    height: 4px;
+    top: 95%;
+}
+
+aside nav {
+    margin: 11px 27px;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul h4 {
+    font-weight: 600;
+    font-size: large;
+    margin: 1vh 0;
+    color: #ffffffe9;
+}
+
+aside ul li,
+aside ul form input {
+    margin: 6px 20px 0 20px;
+
+}
+
+aside ul li a,
+aside ul form input {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffffe9;
+    transition: .4s;
+}
+
+aside ul li a:hover {
+    color: var(--main-color);
+
+}
+
+aside ul form input:hover {
+    color: rgb(237, 15, 15);
+
+}
+
+aside ul form input {
+    border: 0;
+    background-color: #e40000;
+
+}

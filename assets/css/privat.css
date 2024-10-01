@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --main-color: #31C6D4
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+form {
+    top: 40px;
+    width: 50%;
+    height: auto;
+    margin: auto;
+
+}
+
+form .line {
+    display: flex;
+    align-items: center;
+
+}
+
+form .inputbox {
+    display: flex;
+    padding: 7px;
+    width: 100%;
+
+}
+
+form .inputbox label {
+    font-size: larger;
+    color: var(--main-color);
+    padding-right: 5px;
+}
+
+form .inputbox input {
+    padding: 7px 10px;
+    width: 90%;
+    background: transparent;
+    border-radius: 15px;
+    border: 1px solid #696565e9;
+    transition: 0.3s;
+    background-color: #efeeed;
+
+}
+
+form .inputbox input:focus {
+    outline: none;
+    transform: scale(1.02);
+}
+
+form .inputbox .topic {
+    min-height: 200px;
+    margin-right: 20px;
+    padding-top: 0%;
+
+}
+
+form .inputbox .ltopic {
+    padding-right: 25px;
+}
+
+textarea {
+    background-color: #efeeed;
+    border-radius: 15px;
+    outline: none;
+}
+
+select {
+    padding: 7px 10px;
+    width: 90%;
+    background: transparent;
+    border-radius: 15px;
+    border: 1px solid #696565e9;
+    transition: 0.3s;
+    background-color: #efeeed;
+    outline: none;
+    color: #696565e9;
+}
+
+.submit {
+    color: #fff;
+    margin-right: 25px;
+    padding: 7px 15px;
+    text-decoration: none;
+    border-radius: 30px;
+    border: 1px solid var(--main-color);
+    transition: .4s;
+    background-color: var(--main-color);
+    margin-right: 50px;
+    transition: 0.4s;
+    float: right;
+}
+
+.submit:hover {
+    transform: scale(1.1);
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    cursor: pointer;
+    padding: 7px 10px;
+    width: 90%;
+    background: transparent;
+    border-radius: 15px;
+    border: 1px solid #696565e9;
+    transition: 0.3s;
+    background-color: #efeeed;
+    color: #696565e9 !important;
+}
+
+.cont form {
+    display: flex;
+}
+
+/* aside-bar */
+aside {
+    top: 0;
+    background-color: #fff !important;
+    height: 100vh;
+    position: fixed;
+    width: 27vh;
+}
+
+aside h2 a {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 11px;
+    color: var(--main-color);
+    position: relative;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+
+}
+
+aside h2 a::after {
+    content: "";
+    position: absolute;
+    background-color: #31C6D4;
+    width: 15px;
+    height: 15px;
+    border: 10px solid #fff;
+    border-radius: 50%;
+    top: 39px;
+}
+
+aside h2 a::before {
+    content: "";
+    position: absolute;
+    background-color: var(--main-color);
+    width: 80%;
+    height: 4px;
+    top: 95%;
+}
+
+aside nav {
+    margin: 11px 27px;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul h4 {
+    font-weight: 600;
+    font-size: large;
+    margin: 1vh 0;
+    color: #5a5a5ae9;
+}
+
+aside ul li,
+aside ul form input {
+    margin: 6px 20px 0 20px;
+
+}
+
+aside ul li a,
+aside ul form input {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #696565e9;
+    transition: .4s;
+}
+
+aside ul li a:hover {
+    color: var(--main-color);
+
+}
+
+aside ul form input:hover {
+    color: rgb(237, 15, 15);
+
+}
+
+aside ul form input {
+    border: 0;
+    background-color: #fff;
+
+}
+
+.con {
+    width: 100vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10vh;
+    height: 80vh;
+    background: #efeeed;
+}
+
+.info {
+    width: 35vw;
+    height: auto;
+
+}
+
+.con .info h2 {
+    color: var(--main-color);
+    font-weight: bold;
+    text-align: center;
+    padding: 3vh 0;
+    font-size: xx-large;
+}
+
+.con .info p {
+    padding-bottom: 2vh;
+    color: #696565e9;
+    font-weight: 600;
+    font-size: medium;
+}
+
+.con .info h4 {
+    font-weight: bolder;
+    font-size: large;
+}
+
+.con img {
+    width: 30vw;
+    height: auto;
+}
+
+.conta form {
+    margin: 5vh 5vw 87vh 20vw;
+    width: 30vw;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.conta form .inputbox input {
+    padding: 7px 10px;
+    background: transparent;
+    border-radius: 15px;
+    border: 1px solid #696565e9;
+    transition: 0.3s;
+    background-color: #efeeed;
+
+}
+
+.conta form .inputbox {
+    padding: 5px;
+    width: 100%;
+
+}
+
+.conta form .inputbox input[type="text"] {
+    margin-right: 1vw;
+    width: 45vw;
+}
+
+.conta form .inputbox input[type="submit"] {
+    width: 10vw;
+    color: var(--main-color);
+}
+
+.conta form .inputbox input[type="submit"]:hover {
+    background-color: var(--main-color);
+    color: #efeeed;
+}
+
+.co {
+    width: 98vw !important;
+    height: 100vh;
+}
+
+/* support */
+section {
+    min-height: 90.7vh;
+    width: 80vh;
+    margin-left: 300px;
+    padding-top: 20px;
+
+}
+
+section h2 {
+    color: var(--main-color);
+    font-weight: bolder;
+    font-size: xxx-large;
+    margin: 0 0 0 350px;
+}
+
+section .cards {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 10px;
+
+}
+
+section .card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 50px;
+    width: 150vh;
+    border: 1px solid #696565c2;
+    border-radius: 25px;
+    padding: 11px 20px;
+    /* margin-left: 260px; */
+
+}
+
+section .card h3 {
+    color: var(--main-color);
+    font-size: x-large;
+}
+
+section .card h4 {
+    color: #696565c2;
+    font-size: large;
+}
+
+section .card .btn .open {
+    color: #fff;
+    margin-right: 25px;
+    padding: 7px 15px;
+    text-decoration: none;
+    border-radius: 30px;
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
+}
+
+section .card .btn .del {
+    color: #fff;
+    margin-right: 25px;
+    padding: 7px 15px;
+    text-decoration: none;
+    border-radius: 30px;
+    border: 1px solid red;
+    background-color: red;
+}
+
+section .card .btn form {
+    display: inline;
+}
